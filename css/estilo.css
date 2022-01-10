@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cabecalho{
+    padding: 10px 0;
+    background-color: black;
+}
+
+.cabecalho .titulo{
+    color: white;
+}
+
+input{
+    padding: 4px;
+}
+
+.botao{
+    padding: 10px 0;
+    font-size: 17px;
+    border: 0;
+    border-bottom: 3px solid;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0c8cd3;
+    border-color: #04324c;
+    width: 25%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+}
+
+/* Tabela */
+
+.titulo-sec{
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.buscar{
+    margin-bottom: 20px;
+}
+
+.buscar label{
+    color: gray;
+}
+
+.tabela{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabela td, .tabela th{
+    width: 20%;
+    font-size: 14px;
+    padding: 12px 0;
+    margin: 0;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.tabela th{
+    background-color: lightgray;
+}
+
+/* Adicionando na tabela */
+
+.secao-adiciona{
+    margin-top: 20px;
+}
+
+.secao-adiciona .grupo {
+    margin: 10px 0;
+    width: 33%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.secao-adiciona .texto{
+    width: 100%;
+}
+
+.secao-adiciona label{
+    color: #555555;
+}
+
+.erro{
+    display: block;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.invisivel{
+    display: none;
+}
+
+.invalido{
+    background-color: rgb(231, 96, 86);
+}
+
+.none{
+    transition-duration: 1s;
+    opacity: 0;
+}
+
+.corpo-tabela{
+    cursor: pointer;
+}

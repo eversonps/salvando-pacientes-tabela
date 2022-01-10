@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aparecida nutrição</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <h1 class="titulo">Aparecida Nutrição</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="secao-tabela">
+            <h2 class="titulo-sec">Meus Pacientes</h2>
+
+            <div class="buscar">
+                <label for="texto-busca">Buscar:</label>
+                <input type="text" name="texto-busca" id="texto-digitado"> 
+            </div>
+
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Peso(kg)</th>
+                        <th>Altura(m)</th>
+                        <th>Gordura Corporal(%)</th>
+                        <th>IMC</th>
+                    </tr>        
+                </thead>
+                <tbody class="corpo-tabela">
+                     <tr class="paciente">
+                        <td class="nome">Everson</td>
+                        <td class="peso">52</td>
+                        <td class="altura">3.63</td>
+                        <td class="gordura">10</td>
+                        <td class="imc"></td>
+                    </tr>     
+                    <tr class="paciente">
+                        <td class="nome">Lucas</td>
+                        <td class="peso">80</td>
+                        <td class="altura">1.83</td>
+                        <td class="gordura">12</td>
+                        <td class="imc"></td>
+                    </tr>       
+                </tbody>
+            </table>
+
+            <button class="btn-pacientes botao">Trazer Pacientes</button>
+        </section>
+            
+        <section class="secao-adiciona">
+            <h2 class="titulo-sec">Adicionar Novo Paciente</h2>
+            <span class="erro"></span>
+            <form class="formulario">
+                <div class="grupo-nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" class="texto text-nome">
+                </div>
+
+                <div class="grupo">
+                    <label for="peso">Peso:</label>
+                    <input type="text" name="peso" class="texto"> 
+                </div>
+
+                <div class="grupo">
+                    <label for="altura">Altura:</label>
+                    <input type="text" name="altura" class="texto">
+                </div>
+
+                <div class="grupo">
+                    <label for="gordura">% de Gordura:</label>
+                    <input type="text" name="gordura" class="texto">
+                </div>
+                <button class="btn-adicionar botao">Adicionar</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/paciente.js"></script>
+    <script src="js/tabela.js"></script>
+</body>
+</html>
